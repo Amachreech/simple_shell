@@ -128,7 +128,7 @@ int build_history_list(info_t *info, char *buf, int linecount)
  * @info: Structure containing potential arguments. Used to maintain
  *
  * Return: the new histcount
-OBOBOB */
+ */
 int renumber_history(info_t *info)
 {
 	list_t *node = info->history;
@@ -136,7 +136,7 @@ int renumber_history(info_t *info)
 
 	while (node)
 	{
-OBOBOB		node->num = i++;
+		node->num = i++;
 		node = node->next;
 	}
 	return (info->histcount = i);
